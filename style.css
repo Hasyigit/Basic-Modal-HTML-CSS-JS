@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+  }
+  .container {
+    width: 60%;
+    margin: 0 auto;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+  .nav-links {
+    display: flex;
+  }
+  .nav-link {
+    margin: 0 0.7rem;
+  }
+  .banner {
+      text-align: center;
+      display: flex;
+  }
+  .text {
+      margin-top: 165px;
+  }
+  .svg {
+      margin-top: 35px;
+  }
+  .text h1 {
+      font-size: 55px;
+      color: rgb(197, 10, 10);
+  }
+
+  .text p {
+      font-size: 18px;
+      margin-top: 3px;
+      font-family: Snell Roundhand, cursive;
+  }
+
+  .text button {
+      border: 0;
+      color: black;
+      background-color: #6c63ff;
+      font-size: 35px;
+      margin-top: 7px;
+      border-radius: 2rem;
+      width: 190px;
+      cursor: pointer;
+      animation: ease-in 7s;
+  }
+  
+  .text button:hover {
+      background-color: rgb(197, 10, 10);
+      width: 220px;
+  }
+  
+ .h3 {
+     font-size: 155px;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ .modal {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: none;
+     align-items: center;
+     justify-content: center;
+     background: rgba(0, 0, 0, 0.404);
+ }
+
+ .modal form {
+    display: flex;
+    flex-direction: column; /* dikey hizalar */
+    padding: 2rem;
+    background: white;
+    border-radius: 1.5rem;
+    min-width: 30%;
+    position: absolute;
+ }
+
+    #modal-kapat {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: gray;
+        border-bottom-left-radius: 2.5rem;
+        font-size: 25px;
+        
+    }
+
+    #modal-kapat:hover{
+        background: rgb(179, 175, 175);
+    }
+
+    #form-btn {
+        width: 350px;
+        height: 100px;
+        font-size: 25px;
+        margin-left: 10px;
+ }
+ 
+ .modal form input {
+     margin: 0.5rem 0;
+     padding: 0.5rem;
+     font-size: 1.2rem;
+ }
+
+ .modal form input:hover{
+     background-color: rgb(240, 239, 245);
+ }
+
+ @media screen and (max-width: 600px) {
+    body {
+      margin: 0;
+    }
+    
+
+    @media screen and (max-width: 500px) {
+        svg {
+            display: none;
+        } 
+        nav h3 {
+            display: none;
+        }
+        .nav-links {
+            text-align: center;
+        }
